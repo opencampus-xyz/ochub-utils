@@ -1,6 +1,6 @@
 {
   "name": "@opencampus/ochub-utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Open Campus Hub utilities library for analytics and account management",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -42,7 +42,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@opencampus/ocid-connect-js": "^1.0.0"
+    "@opencampus/ocid-connect-js": "^2.0.7"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",

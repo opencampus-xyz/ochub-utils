@@ -54,13 +54,19 @@ Singleton factory. First call creates instance with config; subsequent calls ret
 | isSDKInitialized | ()                        | boolean             | SDK init status                              |
 | subscribe        | (cb: AuthStateSubscriber) | () => void          | Subscribe to changes; returns unsubscribe fn |
 | getSDKInstance   | ()                        | any                 | Raw SDK instance (advanced)                  |
+| getIdToken       | ()                        | string \| undefined | Raw ID token JWT                             |
+| getAccessToken   | ()                        | string \| undefined | Raw access token JWT                         |
 
 ### Usage
 
 ```typescript
 import { getInstance } from "@opencampus/ochub-utils";
 const account = getInstance({ sandboxMode: false });
-if (account.isAuthenticated()) console.log(account.getOCId());
+if (account.isAuthenticated()) {
+  console.log(account.getOCId());
+  console.log(account.getIdToken()); // JWT id token
+  console.log(account.getAccessToken()); // JWT access token
+}
 const unsub = account.subscribe((state) => console.log(state));
 unsub(); // cleanup
 ```

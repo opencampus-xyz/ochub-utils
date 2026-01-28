@@ -62,6 +62,10 @@ if (account.isAuthenticated()) {
   const ocId = account.getOCId();
   const ethAddress = account.getEthAddress();
   const authState = account.getAuthState();
+
+  // Access JWT tokens
+  const idToken = account.getIdToken();
+  const accessToken = account.getAccessToken();
 }
 
 // Check SDK initialization status
@@ -92,7 +96,7 @@ unsubscribe();
   - `OCAccount` - Singleton class for OCID Connect SDK management
   - Authentication state management with subscription support
   - Support for sandbox and live modes
-  - Access to OCId and Ethereum address
+  - Access to OCId, Ethereum address, and JWT tokens (idToken, accessToken)
 
 ## License
 

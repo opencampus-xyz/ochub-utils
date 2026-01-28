@@ -143,6 +143,22 @@ class OCAccount {
   public getSDKInstance(): any {
     return this.ocAuth;
   }
+
+  /**
+   * Get the ID token (JWT)
+   * Returns the raw ID token string or undefined if not authenticated
+   */
+  public getIdToken(): string | undefined {
+    return this.ocAuth?.getIdToken?.();
+  }
+
+  /**
+   * Get the access token (JWT)
+   * Returns the raw access token string or undefined if not authenticated
+   */
+  public getAccessToken(): string | undefined {
+    return this.ocAuth?.getAccessToken?.();
+  }
 }
 
 /**

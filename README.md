@@ -1,11 +1,11 @@
-# @ochub/utils
+# @opencampus/ochub-utils
 
 Open Campus Hub utilities library providing analytics and account management modules.
 
 ## Installation
 
 ```bash
-npm install @ochub/utils
+npm install @opencampus/ochub-utils
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ npm install @ochub/utils
 ### Analytics Module
 
 ```typescript
-import { OCAnalytics } from "@ochub/utils";
+import { OCAnalytics } from "@opencampus/ochub-utils";
 
 // Initialize with app name and GTM container ID (no secrets exposed!)
 OCAnalytics.initialize("my-app", {
@@ -39,7 +39,7 @@ analytics.setUserId("user123");
 ### Account Module
 
 ```typescript
-import { getInstance } from "@ochub/utils";
+import { getInstance } from "@opencampus/ochub-utils";
 
 // Get the module-level singleton instance (instantiates only once)
 const account = getInstance({

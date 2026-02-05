@@ -1,6 +1,6 @@
 {
   "name": "@opencampus/ochub-utils",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Open Campus Hub utilities library for analytics and account management",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,7 +22,8 @@
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "LLM_README.md"
   ],
   "publishConfig": {
     "access": "public"

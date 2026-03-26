@@ -1,6 +1,6 @@
 {
   "name": "@opencampus/ochub-utils",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Open Campus Hub utilities library for analytics and account management",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -19,6 +19,11 @@
       "import": "./dist/account/index.js",
       "require": "./dist/account/index.js",
       "types": "./dist/account/index.d.ts"
+    },
+    "./auth": {
+      "import": "./dist/auth/index.js",
+      "require": "./dist/auth/index.js",
+      "types": "./dist/auth/index.d.ts"
     }
   },
   "files": [
